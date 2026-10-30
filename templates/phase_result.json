@@ -1,0 +1,11 @@
+{
+  "phase": 0,
+  "run_id": "",
+  "model_sha256": null,
+  "passed": false,
+  "metrics": {},
+  "traffic_ratio": null,
+  "notes": "",
+  "hard_constraints_acked": true,
+  "forbidden_claim_lint": "ok"
+}

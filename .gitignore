@@ -1,0 +1,31 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+.DS_Store
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Large / derived
+artifacts/**
+!artifacts/.gitkeep
+!artifacts/model_freeze.json
+data/
+models/
+*.gguf
+*.bin
+*.safetensors
+*.pt
+*.pth
+*.npy
+*.npz
+*.h5
+
+# Editor
+.idea/
+.vscode/
+src/*.egg-info/
+artifacts/phase1_status.json

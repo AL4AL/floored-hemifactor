@@ -1,0 +1,16 @@
+.PHONY: preflight install freeze lint-example phase1
+
+install:
+	python -m pip install -e ".[dev]"
+
+preflight:
+	bash scripts/preflight.sh
+
+freeze:
+	python scripts/freeze_model.py $(GGUF_ARGS)
+
+lint-example:
+	PYTHONPATH=src python -m hemifactor.cli lint-claim "we losslessly fit exact GGUF into 6GB with spare FLOPs"
+
+phase1:
+	PYTHONPATH=src python scripts/phase1_calibrate_stub.py

@@ -1,0 +1,69 @@
+# Default experiment config — edit paths after Phase 0 freeze.
+
+project:
+  name: floored-hemifactor
+  target_speedup: 2.0
+  residency_ratio_max: 0.78   # weights+factors must fit with KV
+  traffic_ratio_target: 0.50
+  traffic_ratio_acceptable: 0.55
+
+model:
+  name: gemma4:12b
+  ollama_digest: "4eb23ef187e2"
+  # Fill after locating blobs:
+  gguf_path: null
+  sha256: null
+  n_layers: 48
+  n_embd: 3840
+  n_ff: 15360
+  swa_window: 1024
+  # 5 local + 1 global repeating
+  swa_pattern: [1, 1, 1, 1, 1, 0]
+  context_field: 262144
+  # Runtime watermark for global KV (tokens), not the header fantasy
+  global_kv_watermark_tokens: 8192
+
+hardware:
+  gpu_name: "NVIDIA GeForce RTX 3050 6GB Laptop GPU"
+  vram_total_mib: 6144
+  # Re-measure at run start
+  vram_usable_mib_estimate: 5792
+  swa_kv_mib_estimate: 320
+  gddr_gbps: 168.0
+  pcie_read_gbps_estimate: 12.0
+  power_limit_w_default: 60
+  power_limit_w_max: 95
+
+calibration:
+  seq_len: 512
+  n_sequences_fit: 256
+  n_sequences_heldout: 64
+  heldout_corpus_path: null
+  dtype_cov: float64
+  store_full_cov: true   # 48 * 3840^2 * 8 ≈ 5.7 GiB; set false to sketch
+
+spectrum:
+  ranks_charted: [1536, 1700, 1920, 2048]
+  ranks_twosided: [1024, 1536, 1920]
+  roles_priority:
+    - down
+    - gate
+    - up
+    - q
+    - o
+    - k
+    - v
+
+prototype:
+  role: down
+  factor_bits: 4
+  share_input_chart_across_local_layers: true
+
+eval:
+  primary_metric: heldout_nll
+  require_q6_to_q4_control: true
+  forbid_chat_vibe_as_pass: true
+
+paths:
+  artifacts_dir: artifacts
+  notes_dir: notes
