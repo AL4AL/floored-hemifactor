@@ -1,0 +1,47 @@
+{
+  "phase": 2,
+  "status": "ok",
+  "aggregate": "branch-B",
+  "tables": [
+    {
+      "layer": 0,
+      "role": "down",
+      "chosen_k": null,
+      "licensed": false,
+      "decision": "branch_b_or_stop",
+      "effective_rank_energy": 59.08246670024285
+    },
+    {
+      "layer": 12,
+      "role": "down",
+      "chosen_k": null,
+      "licensed": false,
+      "decision": "branch_b_or_stop",
+      "effective_rank_energy": 1104.9155630688847
+    },
+    {
+      "layer": 24,
+      "role": "down",
+      "chosen_k": null,
+      "licensed": false,
+      "decision": "branch_b_or_stop",
+      "effective_rank_energy": 1343.006520042669
+    },
+    {
+      "layer": 36,
+      "role": "down",
+      "chosen_k": null,
+      "licensed": false,
+      "decision": "branch_b_or_stop",
+      "effective_rank_energy": 2288.26105740942
+    },
+    {
+      "layer": 47,
+      "role": "down",
+      "chosen_k": null,
+      "licensed": false,
+      "decision": "branch_b_or_stop",
+      "effective_rank_energy": 2090.983266674438
+    }
+  ]
+}

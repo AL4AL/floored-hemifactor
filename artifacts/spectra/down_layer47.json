@@ -1,0 +1,34 @@
+{
+  "d_floor": 7.294901913526883e-05,
+  "total_energy": 0.00931861513847056,
+  "effective_rank_energy": 2090.983266674438,
+  "singular_l1_over_l2_sq": 3282.5384160448907,
+  "licensed": false,
+  "chosen_k": null,
+  "decision": "branch_b_or_stop",
+  "curve": [
+    {
+      "k": 1024,
+      "discarded_energy": 0.004121414569524652,
+      "ok": false,
+      "factor_nbytes_est": 9830400,
+      "byte_ratio_vs_baseline": 0.20317460317460317
+    },
+    {
+      "k": 1536,
+      "discarded_energy": 0.0027221179248168503,
+      "ok": false,
+      "factor_nbytes_est": 14745600,
+      "byte_ratio_vs_baseline": 0.3047619047619048
+    },
+    {
+      "k": 1920,
+      "discarded_energy": 0.0019235650924458987,
+      "ok": false,
+      "factor_nbytes_est": 18432000,
+      "byte_ratio_vs_baseline": 0.38095238095238093
+    }
+  ],
+  "factor_bits": 4.0,
+  "nbytes_baseline": 48384000
+}

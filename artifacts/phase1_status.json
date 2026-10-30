@@ -1,0 +1,15 @@
+{
+  "phase": 1,
+  "status": "ok",
+  "layers": [
+    0,
+    12,
+    24,
+    36,
+    47
+  ],
+  "activation_method": "gaussian_unit_rms_residual",
+  "heldout_corpus_path": "/home/sajjad/PP/floored-hemifactor/data/heldout/corpus.txt",
+  "hard_constraints": "docs/hard-constraints.md",
+  "caveat": "Activations are MLP-surrogate samples (Gaussian residual \u2192 SiLU(gate)*up), not full-model hooked residuals. End-to-end NLL remains a separate bar."
+}

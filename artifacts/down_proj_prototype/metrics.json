@@ -1,0 +1,38 @@
+{
+  "phase": 3,
+  "status": "fail",
+  "layer": 0,
+  "k": 1920,
+  "factor_bits": 4,
+  "activation_mse": 0.0002972302206603496,
+  "d_floor": 1.484760045830597e-06,
+  "quality_pass": false,
+  "factor_nbytes_est": 18432000,
+  "baseline_nbytes": 48384000,
+  "byte_ratio": 0.38095238095238093,
+  "bytes_pass": true,
+  "quantize_meta": {
+    "A": {
+      "bits": 4,
+      "scale": 7.977175067450074e-05,
+      "maxabs": 0.0005584022547215052
+    },
+    "B": {
+      "bits": 4,
+      "scale": 114.98219481729528,
+      "maxabs": 804.875363721067
+    },
+    "nbytes_est": 18432000
+  },
+  "monarch_probe": {
+    "activation_mse": 0.0006449250532345847,
+    "nbytes_est": 614400,
+    "block": 64,
+    "fit_n": 256,
+    "eval_n": 64,
+    "note": "Fit/eval split enforced; exact interpolation on eval is not allowed."
+  },
+  "spectrum_decision": "branch_b_or_stop",
+  "hard_constraints": "docs/hard-constraints.md",
+  "note": "Fail must not be patched by lowering bits on untouched tensors."
+}

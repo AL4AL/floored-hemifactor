@@ -10,9 +10,9 @@ project:
 model:
   name: gemma4:12b
   ollama_digest: "4eb23ef187e2"
-  # Fill after locating blobs:
-  gguf_path: null
-  sha256: null
+  # Local Ollama blob (Phase 0 freeze hashes this path):
+  gguf_path: /usr/share/ollama/.ollama/models/blobs/sha256-1278394b693672ac2799eadc9a83fd98259a6a88a40acfb1dcaa6c6fc895a606
+  sha256: "1278394b693672ac2799eadc9a83fd98259a6a88a40acfb1dcaa6c6fc895a606"
   n_layers: 48
   n_embd: 3840
   n_ff: 15360
@@ -36,11 +36,13 @@ hardware:
 
 calibration:
   seq_len: 512
-  n_sequences_fit: 256
+  n_sequences_fit: 128
   n_sequences_heldout: 64
-  heldout_corpus_path: null
+  heldout_corpus_path: data/heldout/corpus.txt
   dtype_cov: float64
   store_full_cov: true   # 48 * 3840^2 * 8 ≈ 5.7 GiB; set false to sketch
+  # Phase 1 layer subsample (full 48 is optional overnight)
+  probe_layers: [0, 12, 24, 36, 47]
 
 spectrum:
   ranks_charted: [1536, 1700, 1920, 2048]

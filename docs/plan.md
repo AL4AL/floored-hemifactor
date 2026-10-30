@@ -20,10 +20,10 @@ Target artifact: `gemma4:12b` (local Ollama / GGUF), chassis in [hardware.md](ha
 - [x] Create `/home/sajjad/PP/floored-hemifactor`
 - [x] Theory, plan, hardware, related-work, **hard-constraints** docs
 - [x] Package scaffold (`src/hemifactor`, configs, scripts, templates, `AGENTS.md`)
-- [ ] Freeze model identity: path/hash of GGUF (`scripts/freeze_model.py`), Ollama digest `4eb23ef187e2`
+- [x] Freeze model identity: path/hash of GGUF (`scripts/freeze_model.py`), Ollama digest `4eb23ef187e2`
 - [x] Tooling baseline: Python package + `gguf` / NumPy; CUDA kernels deferred to Phase 4. No Ollama runtime required for math.
 
-**Exit:** reproducible pointer to exact weights under test + `artifacts/model_freeze.json`.
+**Exit:** reproducible pointer to exact weights under test + `artifacts/model_freeze.json`. (Done 2026-10-30.)
 
 ---
 

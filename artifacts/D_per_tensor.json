@@ -1,0 +1,141 @@
+{
+  "method": "gaussian_unit_rms_residual",
+  "control_codec": "Q4_0",
+  "tensors": {
+    "blk.0.ffn_down.weight": {
+      "codec": "Q4_0",
+      "note": "Control codec for D; not bitwise Q4_K from the original file.",
+      "weight_mse": 1.1896292102105011e-06,
+      "D_activation_mse": 1.484760045830597e-06,
+      "output_energy": 0.0006085454871008224,
+      "D_relative": 0.002439850557275771,
+      "n_samples": 64,
+      "nbytes": 48384000,
+      "shape": [
+        3840,
+        15360
+      ]
+    },
+    "blk.0.ffn_gate.weight": {
+      "codec": "Q4_0",
+      "note": "Control codec for D; not bitwise Q4_K from the original file.",
+      "weight_mse": 3.2575955851046475e-06,
+      "D_activation_mse": 0.04980774924519858,
+      "output_energy": 4.131242538888432,
+      "D_relative": 0.012056360471781947,
+      "n_samples": 64,
+      "shape": [
+        15360,
+        3840
+      ]
+    },
+    "blk.12.ffn_down.weight": {
+      "codec": "Q4_0",
+      "note": "Control codec for D; not bitwise Q4_K from the original file.",
+      "weight_mse": 7.804654085378278e-07,
+      "D_activation_mse": 1.0384545459122467e-06,
+      "output_energy": 0.00018336992037297728,
+      "D_relative": 0.005663167349366865,
+      "n_samples": 64,
+      "nbytes": 33177600,
+      "shape": [
+        3840,
+        15360
+      ]
+    },
+    "blk.12.ffn_gate.weight": {
+      "codec": "Q4_0",
+      "note": "Control codec for D; not bitwise Q4_K from the original file.",
+      "weight_mse": 2.1574778584930782e-06,
+      "D_activation_mse": 0.033001250080746336,
+      "output_energy": 4.565456973588262,
+      "D_relative": 0.007228465906406015,
+      "n_samples": 64,
+      "shape": [
+        15360,
+        3840
+      ]
+    },
+    "blk.24.ffn_down.weight": {
+      "codec": "Q4_0",
+      "note": "Control codec for D; not bitwise Q4_K from the original file.",
+      "weight_mse": 6.613724088394765e-07,
+      "D_activation_mse": 7.694899103622025e-07,
+      "output_energy": 0.00013590304499106268,
+      "D_relative": 0.005662050547968267,
+      "n_samples": 64,
+      "nbytes": 33177600,
+      "shape": [
+        3840,
+        15360
+      ]
+    },
+    "blk.24.ffn_gate.weight": {
+      "codec": "Q4_0",
+      "note": "Control codec for D; not bitwise Q4_K from the original file.",
+      "weight_mse": 2.12031020006082e-06,
+      "D_activation_mse": 0.03236126177219167,
+      "output_energy": 4.2837559879217535,
+      "D_relative": 0.007554412964565612,
+      "n_samples": 64,
+      "shape": [
+        15360,
+        3840
+      ]
+    },
+    "blk.36.ffn_down.weight": {
+      "codec": "Q4_0",
+      "note": "Control codec for D; not bitwise Q4_K from the original file.",
+      "weight_mse": 7.120755170942303e-07,
+      "D_activation_mse": 7.933455430091103e-07,
+      "output_energy": 0.0001258473741203584,
+      "D_relative": 0.006304029373313483,
+      "n_samples": 64,
+      "nbytes": 33177600,
+      "shape": [
+        3840,
+        15360
+      ]
+    },
+    "blk.36.ffn_gate.weight": {
+      "codec": "Q4_0",
+      "note": "Control codec for D; not bitwise Q4_K from the original file.",
+      "weight_mse": 2.0076017930194374e-06,
+      "D_activation_mse": 0.030756590270626966,
+      "output_energy": 4.180936655065866,
+      "D_relative": 0.007356387529421305,
+      "n_samples": 64,
+      "shape": [
+        15360,
+        3840
+      ]
+    },
+    "blk.47.ffn_down.weight": {
+      "codec": "Q4_0",
+      "note": "Control codec for D; not bitwise Q4_K from the original file.",
+      "weight_mse": 6.469036319295161e-06,
+      "D_activation_mse": 7.294901913526883e-05,
+      "output_energy": 0.010018955257317795,
+      "D_relative": 0.007281100400362326,
+      "n_samples": 64,
+      "nbytes": 48384000,
+      "shape": [
+        3840,
+        15360
+      ]
+    },
+    "blk.47.ffn_gate.weight": {
+      "codec": "Q4_0",
+      "note": "Control codec for D; not bitwise Q4_K from the original file.",
+      "weight_mse": 5.506475557177973e-06,
+      "D_activation_mse": 0.0845620883779204,
+      "output_energy": 11.803867384171276,
+      "D_relative": 0.007163930737761106,
+      "n_samples": 64,
+      "shape": [
+        15360,
+        3840
+      ]
+    }
+  }
+}

@@ -60,6 +60,15 @@ python scripts/freeze_model.py --gguf /path/to/model.gguf
 
 Lenovo LOQ 15IAX9 · RTX 3050 6GB Laptop (GA107) · Intel UHD · i5-12450HX · ~62 GiB RAM · Ubuntu
 
+## License
+
+Apache License 2.0 — see [LICENSE](LICENSE) and [NOTICE](NOTICE). You may use, modify, and
+distribute this Work; copyright and patent ownership remain with the Licensor, with the
+patent license granted in Apache-2.0 §3 for claims necessarily infringed by Contributions.
+
 ## Status
 
-Scaffold + documentation ready for Phase 0 freeze and Phase 1 calibration. No compression result claimed.
+Phases 0–5 runnable via `python -m hemifactor.cli run all`. First measured spectrum on
+`gemma4:12b` down-projections: **branch-B / not licensed** at candidate ranks under the
+Q4_0 distortion floor (see `artifacts/rank_license.md`, `docs/results.md`). Success
+predicate **not** claimed.

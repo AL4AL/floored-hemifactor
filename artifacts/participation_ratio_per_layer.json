@@ -1,0 +1,90 @@
+{
+  "method": "gaussian_unit_rms_residual",
+  "layers": {
+    "0": {
+      "residual": {
+        "n": 128,
+        "dim": 3840,
+        "participation_ratio": 122.84136541583592,
+        "sketch": false
+      },
+      "ff_intermediate": {
+        "n": 128,
+        "dim": 15360,
+        "sketch_dim": 512,
+        "participation_ratio_diag": 2684.851744088267,
+        "sketch": true,
+        "diag_var_mean": 2.0382165443766417e-08,
+        "diag_var_sum": 0.00031307006121625216
+      }
+    },
+    "12": {
+      "residual": {
+        "n": 128,
+        "dim": 3840,
+        "participation_ratio": 122.84136541583592,
+        "sketch": false
+      },
+      "ff_intermediate": {
+        "n": 128,
+        "dim": 15360,
+        "sketch_dim": 512,
+        "participation_ratio_diag": 13703.986159938513,
+        "sketch": true,
+        "diag_var_mean": 2.2601561389749143e-08,
+        "diag_var_sum": 0.00034715998294654684
+      }
+    },
+    "24": {
+      "residual": {
+        "n": 128,
+        "dim": 3840,
+        "participation_ratio": 122.84136541583592,
+        "sketch": false
+      },
+      "ff_intermediate": {
+        "n": 128,
+        "dim": 15360,
+        "sketch_dim": 512,
+        "participation_ratio_diag": 11753.612328873409,
+        "sketch": true,
+        "diag_var_mean": 1.9678801991140317e-08,
+        "diag_var_sum": 0.00030226639858391526
+      }
+    },
+    "36": {
+      "residual": {
+        "n": 128,
+        "dim": 3840,
+        "participation_ratio": 122.84136541583592,
+        "sketch": false
+      },
+      "ff_intermediate": {
+        "n": 128,
+        "dim": 15360,
+        "sketch_dim": 512,
+        "participation_ratio_diag": 12375.331485803272,
+        "sketch": true,
+        "diag_var_mean": 1.9051606127841446e-08,
+        "diag_var_sum": 0.0002926326701236446
+      }
+    },
+    "47": {
+      "residual": {
+        "n": 128,
+        "dim": 3840,
+        "participation_ratio": 122.84136541583592,
+        "sketch": false
+      },
+      "ff_intermediate": {
+        "n": 128,
+        "dim": 15360,
+        "sketch_dim": 512,
+        "participation_ratio_diag": 10223.756158262482,
+        "sketch": true,
+        "diag_var_mean": 1.8708405299892026e-07,
+        "diag_var_sum": 0.002873611054063415
+      }
+    }
+  }
+}

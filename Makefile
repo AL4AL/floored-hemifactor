@@ -1,4 +1,4 @@
-.PHONY: preflight install freeze lint-example phase1
+.PHONY: preflight install freeze lint-example phase1 test run-all
 
 install:
 	python -m pip install -e ".[dev]"
@@ -13,4 +13,10 @@ lint-example:
 	PYTHONPATH=src python -m hemifactor.cli lint-claim "we losslessly fit exact GGUF into 6GB with spare FLOPs"
 
 phase1:
-	PYTHONPATH=src python scripts/phase1_calibrate_stub.py
+	PYTHONPATH=src python -m hemifactor.cli run 1
+
+test:
+	PYTHONPATH=src python -m pytest -q
+
+run-all:
+	PYTHONPATH=src python -m hemifactor.cli run all

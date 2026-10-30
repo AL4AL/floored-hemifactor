@@ -13,19 +13,31 @@ venv/
 artifacts/**
 !artifacts/.gitkeep
 !artifacts/model_freeze.json
-data/
+!artifacts/D_per_tensor.json
+!artifacts/participation_ratio_per_layer.json
+!artifacts/q6_to_q4_control.json
+!artifacts/rank_license.md
+!artifacts/phase*_status.json
+!artifacts/spectra/
+!artifacts/spectra/**
+!artifacts/down_proj_prototype/
+!artifacts/down_proj_prototype/metrics.json
+# keep heavy arrays local-only
+artifacts/**/*.npz
+artifacts/**/*.npy
+artifacts/down_proj_prototype/*.npz
+data/**
+!data/heldout/
+!data/heldout/corpus.txt
 models/
+src/*.egg-info/
 *.gguf
 *.bin
 *.safetensors
 *.pt
 *.pth
-*.npy
-*.npz
 *.h5
 
 # Editor
 .idea/
 .vscode/
-src/*.egg-info/
-artifacts/phase1_status.json

@@ -1,0 +1,36 @@
+{
+  "method": "gaussian_unit_rms_residual",
+  "control_codec": "Q4_0",
+  "layers": {
+    "0": {
+      "down_D_activation_mse": 1.484760045830597e-06,
+      "down_D_relative": 0.002439850557275771,
+      "gate_D_activation_mse": 0.04980774924519858,
+      "note": "Tensor-level Q6-dequant\u2192Q4_0 control; not end-to-end NLL yet."
+    },
+    "12": {
+      "down_D_activation_mse": 1.0384545459122467e-06,
+      "down_D_relative": 0.005663167349366865,
+      "gate_D_activation_mse": 0.033001250080746336,
+      "note": "Tensor-level Q6-dequant\u2192Q4_0 control; not end-to-end NLL yet."
+    },
+    "24": {
+      "down_D_activation_mse": 7.694899103622025e-07,
+      "down_D_relative": 0.005662050547968267,
+      "gate_D_activation_mse": 0.03236126177219167,
+      "note": "Tensor-level Q6-dequant\u2192Q4_0 control; not end-to-end NLL yet."
+    },
+    "36": {
+      "down_D_activation_mse": 7.933455430091103e-07,
+      "down_D_relative": 0.006304029373313483,
+      "gate_D_activation_mse": 0.030756590270626966,
+      "note": "Tensor-level Q6-dequant\u2192Q4_0 control; not end-to-end NLL yet."
+    },
+    "47": {
+      "down_D_activation_mse": 7.294901913526883e-05,
+      "down_D_relative": 0.007281100400362326,
+      "gate_D_activation_mse": 0.0845620883779204,
+      "note": "Tensor-level Q6-dequant\u2192Q4_0 control; not end-to-end NLL yet."
+    }
+  }
+}

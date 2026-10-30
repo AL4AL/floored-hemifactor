@@ -1,0 +1,49 @@
+{
+  "phase": 0,
+  "status": "ok",
+  "hard_constraints": "docs/hard-constraints.md",
+  "note": "Exact codes in 6GB remains CLOSED; freeze is identity only.",
+  "gguf_path": "/usr/share/ollama/.ollama/models/blobs/sha256-1278394b693672ac2799eadc9a83fd98259a6a88a40acfb1dcaa6c6fc895a606",
+  "size_bytes": 7381382048,
+  "sha256": "1278394b693672ac2799eadc9a83fd98259a6a88a40acfb1dcaa6c6fc895a606",
+  "ollama_digest": "4eb23ef187e2",
+  "summary_fields": {
+    "general.architecture": "gemma4",
+    "general.base_model.0.name": "Gemma 4 12B",
+    "gemma4.block_count": 48,
+    "gemma4.embedding_length": 3840,
+    "gemma4.context_length": 262144
+  },
+  "inventory_roles": {
+    "k": {
+      "count": 48,
+      "nbytes": 185794560
+    },
+    "o": {
+      "count": 48,
+      "nbytes": 495452160
+    },
+    "q": {
+      "count": 48,
+      "nbytes": 495452160
+    },
+    "v": {
+      "count": 40,
+      "nbytes": 217497600
+    },
+    "down": {
+      "count": 48,
+      "nbytes": 1957478400
+    },
+    "gate": {
+      "count": 48,
+      "nbytes": 1592524800
+    },
+    "up": {
+      "count": 48,
+      "nbytes": 1592524800
+    }
+  },
+  "n_tensors": 667,
+  "tensor_nbytes_sum": 7365558464
+}

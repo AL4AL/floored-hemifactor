@@ -1,0 +1,41 @@
+{
+  "phase": 4,
+  "status": "ok",
+  "bench": {
+    "repeats": 100,
+    "seconds": 0.9127132080029696,
+    "us_per_call": 9127.132080029696,
+    "factor_bytes_fp64": 294912000,
+    "impl": "numpy_fused",
+    "note": "CPU stand-in; CUDA/Triton path is Phase 4 on-device work."
+  },
+  "role_traffic": {
+    "weight_or_factor_bytes": 18432000.0,
+    "chart_reread_bytes": 0.0,
+    "tail_reread_bytes": 0.0,
+    "kv_bytes": 6990506.666666667,
+    "bytes_per_token": 25422506.666666668
+  },
+  "roofline_factor": {
+    "bytes_per_token": 18432000.0,
+    "tok_s_gddr": 9114.583333333334,
+    "tok_s_pcie": 651.0416666666666,
+    "gddr_gbs": 168.0,
+    "pcie_gbs": 12.0,
+    "note": "Batch-1 decode is memory-bound here; FLOP cuts alone are secondary."
+  },
+  "roofline_baseline_role": {
+    "bytes_per_token": 48384000.0,
+    "tok_s_gddr": 3472.222222222222,
+    "tok_s_pcie": 248.015873015873,
+    "gddr_gbs": 168.0,
+    "pcie_gbs": 12.0,
+    "note": "Batch-1 decode is memory-bound here; FLOP cuts alone are secondary."
+  },
+  "speedup_role_roofline": 2.625,
+  "caveat": "Microbenchmark is CPU NumPy fused path; on-device CUDA timing still required for tok/s claims.",
+  "power_limits_w": [
+    60,
+    95
+  ]
+}

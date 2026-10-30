@@ -1,0 +1,27 @@
+{
+  "phase": 5,
+  "status": "complete",
+  "spectrum_aggregate": "branch-B",
+  "prototype": {
+    "status": "fail",
+    "byte_ratio": 0.38095238095238093,
+    "quality_pass": false
+  },
+  "extrapolated_down_only_compression": {
+    "working_set_mib": 5868.7077723911825,
+    "with_swa_kv_mib": 6188.7077723911825,
+    "traffic_ratio_vs_full_file": 0.842649503993798,
+    "residency_ok_estimate": false
+  },
+  "success_predicate": {
+    "distortion_bar": false,
+    "e2e_nll_bar": false,
+    "traffic_bar": false,
+    "residency_bar": false,
+    "speed_bar": false
+  },
+  "success_predicate_pass": false,
+  "phase4_caveat": "Microbenchmark is CPU NumPy fused path; on-device CUDA timing still required for tok/s claims.",
+  "hard_constraints": "docs/hard-constraints.md",
+  "conclusion": "Do not claim ~2\u00d7 tok/s or full-model success: e2e NLL and GDDR-resident device timing are not cleared. Record spectrum/prototype outcomes as-is."
+}
